@@ -1,0 +1,11 @@
+psql -U postgres
+CREATE DATABASE griffgraffgroe-bdd;
+
+\c loginDB
+
+CREATE TABLE users (
+  id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL
+);
+
