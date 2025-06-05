@@ -19,7 +19,7 @@ app.use('/api/signout', require('./routes/signout'));
 const port = process.env.PORT || 5000;
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send('Server is running');
 });
 
 app.listen(port, () => {
